@@ -26,7 +26,7 @@ class _TabsState extends State<Tabs> {
         body: this._pageList[this.index],
         bottomNavigationBar: BottomNavigationBar(
           iconSize: 40,
-          fixedColor: Colors.yellow,
+          fixedColor: Colors.red,
           type: BottomNavigationBarType.fixed,
           items: [
             BottomNavigationBarItem(
@@ -35,11 +35,11 @@ class _TabsState extends State<Tabs> {
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.category),
-              title: Text('分类')
+              title: Text('设置')
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.settings),
-              title: Text('设置')
+              title: Text('分类')
             )
           ],
           currentIndex: this.index,

@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget{
       home: Tabs(),
       // color:Colors.yellow,
       theme: ThemeData(
-        primarySwatch:Colors.red,
+        primarySwatch:Colors.blue,
         // primaryColor:Colors.yellow,
       ),
     );
