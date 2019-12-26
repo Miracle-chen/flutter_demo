@@ -10,10 +10,21 @@ class SettingPage extends StatefulWidget {
 class _SettingPageState extends State<SettingPage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-       child: Center(
-         child: Text('我是设置组件'),
-       ),
+    return ListView(
+      children: <Widget>[
+        RaisedButton(
+          child: Text('跳转到搜索页面'),
+          onPressed: (){
+            Navigator.pushNamed(context, '/search');
+          },
+        ),
+        RaisedButton(
+          child: Text('跳转到表单页面'),
+          onPressed: (){
+            Navigator.pushNamed(context, '/form');
+          },
+        ),
+      ],
     );
   }
 }
